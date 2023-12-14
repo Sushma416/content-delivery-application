@@ -1,0 +1,147 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQBDgMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAADAgABBAYH/8QAHBABAQEBAQEBAQEAAAAAAAAAAAECETESIUED/8QAGQEBAQEBAQEAAAAAAAAAAAAAAgEDAAUE/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAERAv/aAAwDAQACEQMRAD8A/N2dcei9d1WU8JEcqLiZF5iKvMJmJzC5iU5HcwmY5mFzBKR3MJJ+OZhcwKWNmEzGkJnI0o0hMxswkgU2zFyO5hJkSiZCSOzK5Aqp4qRUyqZRUyNxcy7xzh8aksTY5B2JJYiw4zqKir0jXhQKm1y1yscZVUrvUMbOvhmZn0VyoqJi4jlwuYjMLmOOReYXMRk2Yh4rMJmOZhMwDkdzC5jmYTMClI7mFzHMwmYNKR3MJnLZhMxnVbMJmNmLkRY0yuZdkXIFVyZVI7IqRHJkbi+Nxw6OxNyXjljnBsHqG1B6hwKHXg9eF2LRQKOuWu31NOM63XY44cZdPiXZHHcvpqqi8xPF5FSZLmDzDZccJj8NgWTZc0hMwmYnBcwKUXmEzEZLlnSXmEkRkmRqkzF5ickkZ1V5i5E5hIKuyLjki5Bc7IqRyRUiObjOs5E2J/i06UbR6Do9Ds4IdC0XQtFAoqirqDjOsznW6cZV8UqJVG9JcXERcRYXBswOT4c0hMw2BZNlNaQmTZHgmQqkzC5HkuQp4vMLkeS5CqvPpIjJICrzCZiMkyNcqKiYqA5eVOTx1yMzM5zidLRVgVGhaLoWzGh2DZ9B2UCiqKrSNNIzrjJ63TjKvjYuJio1NWSZRCZcUJk+A5NlzSFybIsGwNOFwTI8lyNLF5LlGSZZ0l5LkcLkKq8kicryKryTKISDXKikxUBy47GjORmZnIydKTrxYNRRbLR7MKDQNvR/oDRwKHQqXQtHGdTXOtanpxlXyMUmKjVouFyLJcuKFwbIcny5pDZLkWS5GnC5LkeS5C0pSZJkeSZCkWEg8lgVVwmUReQUkXEZJBrlRWfUxUFynXHXIzMzhrJ0pFKJU0eiUezCh2DZ9B2cC0GhaLoOzjLpFS7Umyr5OKiIuU611cLkOaWV2rD4Nl58U2UaSnybIMGyjSGzTZoclzWdpFyXIskzRpGySCzSZCqWEz4KUmaKkySDyuUK5cVESq6jluolV1yOtU2udciuotbrlpwK1o9O6o9UhqNB2TVDunGdFoOqXVDo4y6HU9VU02VfJOxxurpkhM0OSRF0+abNefNLmu05Xpxo2K8udGzpLWkr050bNeXOjZ0NOV6c0ua82dFzoacr0ZpZXmzos0FN6M0ma8+dEzoasejOlSgzpc0CnlVKGaVNI4vW6Oab6cOEtbo/py6ci7U3SLpN0cGruh6qbpN0UZ1zVFqq1oWq0jOp0Gr1R2nGXSKl2uGzr5NmZxKyuDi4NcTNJmiySCsps0ua8+aXNc0lejOi5080pc0acr050TOnmzSSo0lerOi508udEmgrSV6pomdPJNFzoaceqaVNPNNLmhJ6Jpc0830qaRz0fbfQJp36c4305dC+nLpYFJdJukXSbowq7pN0m6RaUZ121Gq5qotOMunLUWu2otOMazjNacZ18ozM6tXYqMwVF5XHWRysky6yFFwmGYWkJkkZkrSEyTLrC15JFRmGnFyrjMBqiozOc671mc5zrMyhXLXKzGzqamsxxl0iprMUZdJqWY4yrjlZjgV//9k=);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  /* align items center vertically and horizontally  */
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items:center !important;
+    height: 100vh;
+  }
+  .form{
+    width: 400px;
+    height: 480px;
+    background-color: rgba(41, 39, 39, 0.3);
+    box-shadow: 0 5px 30px black;
+  }
+  .btn button {
+    padding: 3px;
+    margin: 30px 0px 40px 30px;
+    border-style: none;
+    background-color: transparent;
+    color: beige;
+    font-size: 18px;
+    font-weight: 550;
+  }
+  .formGroup{
+    display: flex;
+    justify-content: center;
+  }
+  .formGroup input{
+    border: none;
+    width: 80%;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color:transparent;
+    color: white;
+  }
+  input:focus {
+    outline: none !important;
+    border-bottom: 2px solid rgb(91, 243, 131);
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+  ::placeholder {
+    color: white;
+  }
+  .checkBox{
+    display: flex;
+    justify-content: center;
+    margin: 16px!important;
+  }
+   
+  #checkbox{
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+  }
+  .text{
+    color: rgb(199, 197, 197);
+    font-size: 13px;
+  }
+  .btn2{
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: rgb(10, 136, 43);
+    border-style: none;
+    color: white;
+    font-weight: 600;
+  }
+  .btn2:hover{
+    background-color: rgba(10, 136, 43, 0.5);
+  }
+  .btn button:hover{
+    border-bottom: 2px solid rgb(91, 243, 131);
+  }
+   
+  /* hide signup form */
+  .login{
+    display: none;
+  }
+   
+  /* Login form code */
+  .login{
+    margin-top: 40px;
+  }
+  .login .checkBox{
+    margin-top: 30px !important;
+  }
+  .pass{
+    margin: -5px 0 20px 5px;
+    color:white;
+    cursor: pointer;
+  }
+  .pass:hover{
+    text-decoration: underline;
+  }
